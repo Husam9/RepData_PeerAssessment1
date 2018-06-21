@@ -37,7 +37,7 @@ Steps_Per_Day <- aggregate(steps~date,data=data,sum,na.rm=TRUE)
 hist(Steps_Per_Day$steps,breaks =100, xlab = "Total number of steps per day", col=4, main=" Total number of steps taken each day")
 ```
 
-![](PA1_template_files/figure-html/total_number_of_steps_taken_per_day-1.png)<!-- -->
+![](README_figs/README-total_number_of_steps_taken_per_day-1.png)<!-- -->
 
 ```r
 mean_of_steps <- round(mean(Steps_Per_Day$steps))
@@ -72,7 +72,7 @@ plot(row.names(daily_activity_pattern), daily_activity_pattern, type = "l", col 
      main = "Average number of steps per day")
 ```
 
-![](PA1_template_files/figure-html/average_daily_activity_pattern-1.png)<!-- -->
+![](README_figs/README-average_daily_activity_pattern-1.png)<!-- -->
 
 
 ```r
@@ -118,7 +118,7 @@ Steps_Per_Day2 <- aggregate(steps~date,data=new_data_fill,sum,na.rm=TRUE)
 hist(Steps_Per_Day2$steps,breaks =100, xlab = "Total number of steps per day", col=4, main = "Total number of steps taken each day ")
 ```
 
-![](PA1_template_files/figure-html/histogram_mean_median_for_new_data set-1.png)<!-- -->
+![](README_figs/README-histogram_mean_median_for_new_data set-1.png)<!-- -->
 
 ```r
 new_data_mean <- round(mean(Steps_Per_Day2$steps))
@@ -143,6 +143,6 @@ xyplot(AvgStepsAcrossDays$steps ~ AvgStepsAcrossDays$interval | AvgStepsAcrossDa
        layout =c(1,2), type="l",xlab="interval", ylab="Avg no. of steps")
 ```
 
-![](PA1_template_files/figure-html/total_number_of_steps_taken_per_day_for_new_data_set-1.png)<!-- -->
+![](README_figs/README-total_number_of_steps_taken_per_day_for_new_data_set-1.png)<!-- -->
 
 

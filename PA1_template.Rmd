@@ -6,7 +6,11 @@ output:
   html_document:
     keep_md: true
 ---
-
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  fig.path = "README_figs/README-"
+)
+```
 
 ## R Markdown
 
