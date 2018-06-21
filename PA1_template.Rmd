@@ -2,7 +2,7 @@
 title: "Exploratory Data Analysis Assignment- Course Project 1"
 author: "Husm"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
-output: html_document
+output: rmarkdown::github_document
 ---
 
 
